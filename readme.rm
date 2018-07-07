@@ -1,0 +1,72 @@
+simple tic-tac game 
+before run your browser should support javascript ecma6 version
+
+--------------------git commands for this project---------------------
+ref https://www.youtube.com/watch?v=Y9XZQO1n_7c
+1)create folder tic_tac
+2)cd tic_tac
+3)git init
+4)touch readme.rm
+5)git status
+6)git add readme.rm
+7)git commit -m "initial commit"
+8)touch index.html logic.js
+9)git status
+10)touch .gitignore
+11)in .gitignore file write .idea for exclude .idea file on add . command
+
+12)git add .
+13)git commit -m "added project files"
+		or use one command (git commit -a -m "added project files")
+14)git branch MyBranch   -->> created new branch with name MyBranch
+15)git checkout MyBranch
+16)touch index.css
+17)git add .
+18)git commit -m "first commit on branch"
+
+19)git checkout master
+20)git status
+21)write something on readme.rm and git commit -a -m "updatedet master readme.rm"
+22)git checkout MyBranch
+23)write something on readme.rm and git commit -a -m "updatedet MyBranch readme.rm"
+24)git merge master   
+		-->>> cant do becouse readme file changed on both branches, 
+		so do this we should remove on MyBranch->readme.rm->
+		remove head and master row and do command 
+			git add .
+			git commit -m "MyBranch merged to master"
+		git merge master
+
+25)git touch newstashfile
+26)git checkout master
+27)git status
+28)git checkout MyBranch
+29)git add .
+30)git stash   					-->> hide not commited files
+31)git status
+32)git checkout master
+33)git status
+34)git checkout MyBranch
+35)git stash apply   			-->>show stashed files
+36)git status
+
+------------------------------------working with remote repositories----------------------------------
+37)git remote
+38)on browser login github and create new repository test and copy link
+39)git clone https://github.com/Khachatur1986/test.git
+40)git remote
+41)cd test
+42)git remote  -->>(https://stackoverflow.com/questions/10588291/git-branching-master-vs-origin-master-vs-remotes-origin-master
+					origin is the alias for the URL from which you cloned the repository.
+					There is one master branch in the remote repository (aliased by origin). 
+					There is also another master branch created locally.)
+43)git remote -v					
+44)git fetch origin  --> to get remote changhes on local repository but not merged, we should merge it manualy
+45)git pull origin -->>fetch and merge remote branch in to current branch automaticaly
+46)git commit -a -m "readme changes"
+47)git push origin master
+	type credentials for login github
+
+48)git remote add MyRepo https://github.com/Khachatur1986/somerepo.git  -->> MyRepo is alias for somerepo
+49)git remote -v
+50)git fetch myrepo
