@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <table border="1">
+        <tr>
+            <td>
+                <button onclick="onCellClick(this)" value="00"></button>
+            </td>
+            <td>
+                <button onclick="onCellClick(this)" value="01"></button>
+            </td>
+            <td>
+                <button onclick="onCellClick(this)" value="02"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="onCellClick(this)" value="10"></button>
+            </td>
+            <td>
+                <button onclick="onCellClick(this)" value="11"></button>
+            </td>
+            <td>
+                <button onclick="onCellClick(this)" value="12"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="onCellClick(this)" value="20"></button>
+            </td>
+            <td>
+                <button onclick="onCellClick(this)" value="21"></button>
+            </td>
+            <td>
+                <button onclick="onCellClick(this)" value="22"></button>
+            </td>
+        </tr>
+    </table>
+    <div id="result" style="visibility: hidden">
+        <p id="winner"></p>
+    </div>
+
+    <button id="restart" onclick="restart()">Restart</button>
+</div>
+
+<script src="logic.js"></script>
+</body>
+</html>
